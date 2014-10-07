@@ -1,0 +1,39 @@
+<config>
+    <tabs>
+        <stuntcoders>
+            <label>Stuntcoders</label>
+            <sort_order>99999</sort_order>
+        </stuntcoders>
+    </tabs>
+    <sections>
+        <wpadmin>
+            <label>WordPress Admin</label>
+            <tab>stuntcoders</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <wpadmin_options translate="label">
+                    <label>Wordpress Admin options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <path>
+                            <label>Path:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </path>
+                    </fields>
+                </wpadmin_options>
+            </groups>
+        </wpadmin>
+    </sections>
+</config>

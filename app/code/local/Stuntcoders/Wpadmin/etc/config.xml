@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Stuntcoders_Wpadmin>
+            <version>0.1.0</version>
+        </Stuntcoders_Wpadmin>
+    </modules>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <wpadmin>
+                                            <title>WordPress admin</title>
+                                        </wpadmin>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <menu>
+            <wpadmin>
+                <title>WordPress</title>
+                <sort_order>100</sort_order>
+                <action>/wordpress</action>
+            </wpadmin>
+        </menu>
+    </adminhtml>
+    <default>
+        <wpadmin>
+            <wpadmin_options>
+                <path>/side</path>
+            </wpadmin_options>
+        </wpadmin>
+    </default>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Stuntcoders_Wpadmin after="Mage_Adminhtml">Stuntcoders_Wpadmin</Stuntcoders_Wpadmin>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
