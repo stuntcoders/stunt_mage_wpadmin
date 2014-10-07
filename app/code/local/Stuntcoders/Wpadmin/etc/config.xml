@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Stuntcoders_Wpadmin>
-            <version>0.1.0</version>
+            <version>1.0.0</version>
         </Stuntcoders_Wpadmin>
     </modules>
     <adminhtml>
